@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formpage</title>
+    <link rel="iconpage" href="/iconpage.png" type="png">
+    <style>
+        body{
+            background-color: rgba(0, 26, 255, 0.336);
+            margin: 0;
+            text-align: center;
+        }
+        h1{
+            padding-top: 50px;
+        }
+        .container label{
+            display: inline-block;
+            width: 100px;
+            
+        }
+        form{
+            background-color: white;
+            border: groove;
+        }
+        .container input{
+            display: inline-block;
+            margin: 5px;
+            
+        }
+        .radio{
+            text-align: right;
+            display: inline-block;
+            margin: 15px;
+        }
+        .selects{
+            display: inline-block;
+        }
+        .checkboxs{
+            padding-top: 20px;
+            text-align: right;
+            display: inline-block;
+
+        }
+        #check1{
+            margin-right: 15px
+        }
+        .button{
+            margin-top: 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 6px 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personal Form</h1>
+    <form>
+        <div class="container">
+        <label>Name</label> 
+        <input type="text" placeholder="Enter your name" required> <br>
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your last name" required> <br>
+        <label>Email</label>
+        <input type="mail" placeholder="Enter your email adress" required> <br>
+        </div> 
+        <div class="radio">
+        <label id="radio1">How many people are in your family</label> 
+        <label for="val1">
+        <input id="val1" type="radio" name="Family-radio">1</label> <br>
+        <label for="val2">
+        <input id="val2" type="radio" name="Family-radio">2</label> <br>
+        <label for="val3">
+        <input id="val3" type="radio" name="Family-radio">3</label> <br>
+       </div> <br>
+       <div class="selects">
+        <Label>Where do you prefer to travel?</Label>
+        <select name="choice" id="travel">
+        <option value="EEUU">United States</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Italy">Italy</option>
+       </div> 
+       </select> <br>
+       <div class="checkboxs">
+        <label id="check1">What emotions did you experience? <br> (Select all that apply)</label> 
+        <input type="checkbox"> <label>Excited</label> <br>
+        <input type="checkbox"> <label>Humbled</label> <br>
+        <input type="checkbox"> <label>Elated</label> <br>
+        <input type="checkbox"> <label>Loved</label> <br>
+        <input type="checkbox"> <label>Enthusiastic</label>
+        </div> <br>
+        <button class="button" type="submit">Submit
+        </button>
+        </form>
+</body>
+</html>
